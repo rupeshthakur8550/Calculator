@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useRef } from 'react';
 import { DataContext } from '../context/DataContext';
 
 const Output = () => {
-    const { expression, history } = useContext(DataContext);
+    const { expression, result, history } = useContext(DataContext);
     const expressionRef = useRef(null);
     const historyRef = useRef(null);
 
