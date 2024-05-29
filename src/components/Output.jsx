@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useRef } from 'react';
 import { DataContext } from '../context/DataContext';
 
 const Output = () => {
-    const { expression, result, history } = useContext(DataContext);
+    const { expression, history } = useContext(DataContext);
     const expressionRef = useRef(null);
     const historyRef = useRef(null);
 
@@ -26,10 +26,10 @@ const Output = () => {
                 ))}
             </div>
             <div className='header_expression'>
-                <p ref={expressionRef} className='sm:text-lg text-2xl overflow-x-auto scrollbar-hide'>
+                <p ref={expressionRef} className='sm:text-2xl text-4xl overflow-x-auto scrollbar-hide'>
                     {expression}
                 </p>
-                <p className='sm:text-2xl text-4xl'>{result}</p>
+                {/* <p className='sm:text-2xl text-4xl'>{result}</p> */}
             </div>
         </div>
     );
