@@ -29,7 +29,9 @@ const Output = () => {
                 <p ref={expressionRef} className='sm:text-2xl text-4xl overflow-x-auto scrollbar-hide'>
                     {expression}
                 </p>
-                {/* <p className='sm:text-2xl text-4xl'>{result}</p> */}
+                {
+                    expression.length == 0 && <p className='sm:text-2xl text-4xl'>{result}</p>
+                }
             </div>
         </div>
     );
