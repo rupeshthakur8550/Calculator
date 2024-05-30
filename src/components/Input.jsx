@@ -9,7 +9,7 @@ const Input = () => {
         return () => {
             document.removeEventListener('keydown', handleKeydown);
         };
-    }, [expression]); // Dependency added to re-render on expression change
+    }, [expression]);
 
     const handleKeydown = (event) => {
         const { key } = event;
@@ -74,13 +74,13 @@ const Input = () => {
     ];
 
     return (
-        <div className="sm:h-full w-full flex flex-col items-center justify-center bg-black p-4 h-[60%]">
+        <div className="w-full flex flex-col items-center justify-center bg-black p-4 h-[60%] sm:h-full">
             <div className="keypad w-full flex bg-black space-x-4">
                 <div className="keypad_keys flex-1 grid grid-cols-4 gap-2 mx-3 my-1">
                     {keys.map((item, index) => (
                         <button
                             key={index}
-                            className="bg-gray-800 text-white sm:p-4 p-6 rounded text-center text-lg"
+                            className="bg-gray-800 text-white p-4 sm:p-6 rounded text-center text-lg"
                             onClick={() => handleButtonClick(item.value)}
                         >
                             {item.label}

@@ -1,6 +1,6 @@
-import React from 'react'
-import Output from '../Output'
-import Input from '../Input'
+import React from 'react';
+import Output from '../Output';
+import Input from '../Input';
 
 const Calculator = () => {
     return (
@@ -8,7 +8,7 @@ const Calculator = () => {
             <Output />
             <Input />
         </div>
-    )
+    );
 }
 
-export default Calculator
+export default Calculator;
