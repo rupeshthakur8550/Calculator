@@ -74,7 +74,7 @@ const Input = () => {
     ];
 
     return (
-        <div className="w-full flex flex-col items-center justify-center bg-black p-4 h-[60%] sm:h-full">
+        <div className="w-full flex flex-col items-center justify-center bg-black p-4 h-[60%] sm:h-screen">
             <div className="keypad w-full flex bg-black space-x-4">
                 <div className="keypad_keys flex-1 grid grid-cols-4 gap-2 mx-3 my-1">
                     {keys.map((item, index) => (
