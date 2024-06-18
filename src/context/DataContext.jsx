@@ -1,6 +1,8 @@
 import React, { createContext, useState, useEffect } from 'react';
 
-export const DataContext = createContext();
+const DataContext = createContext();
+
+export dataContext;
 
 export const DataProvider = ({ children }) => {
     const [expression, setExpression] = useState('');
